@@ -1,0 +1,130 @@
+.dft-banner {
+    overflow: hidden;
+}
+.dft-banner .banner-fotos {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+}
+.dft-banner .banner-fotos img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+}
+.dft-banner .banner-fotos a {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.dft-banner.slick-slider {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.dft-banner.slick-slider .slick-list {
+    width: 100%;
+}
+.dft-banner.slick-slider button.slick-arrow {
+    background: transparent;
+    border: none;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 99;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.dft-banner.slick-slider button.slick-arrow img{
+    max-width: 32px;
+}
+
+.dft-banner.slick-slider button.slick-arrow:hover {
+    opacity: 0.6;
+}
+
+.dft-banner.slick-slider button.slick-arrow:first-child {
+    left: 15px;
+}
+.dft-banner.slick-slider button.slick-arrow.slick-prev {
+    transform: scaleX(-1);
+}
+
+.dft-banner.slick-slider button.slick-arrow:last-child {
+    right: 15px;
+}
+.dft-banner ul.slick-dots {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 8px;
+}
+.dft-banner ul.slick-dots button {
+    border-radius: 50px;
+    border: none;
+    font-size: 0;
+    width: 16px;
+    height: 16px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+    margin: 0px 5px;
+    transition: background 0.2s ease-in-out;
+}
+
+@media only screen and (max-width: 1000px) {
+    .dft-banner {
+        height: auto !important;
+        overflow: hidden;
+        -webkit-box-align: baseline !important;
+        -ms-flex-align: baseline !important;
+        align-items: baseline !important;
+   }
+    .dft-banner .banner-fotos {
+        height: auto !important;
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+        -webkit-box-align: baseline !important;
+        -ms-flex-align: baseline !important;
+        align-items: baseline !important;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        background: #000;
+   }
+    .dft-banner .banner-fotos a {
+        -webkit-box-align: baseline !important;
+        -ms-flex-align: baseline !important;
+        align-items: baseline !important;
+   }
+}
